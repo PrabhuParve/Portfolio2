@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prabhu Parve | Portfolio</title>
+    <link rel="stylesheet" href="i.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('about-me')"><i class="fas fa-user"></i> About Me</a></li>
+            <li><a href="#" onclick="showSection('education')"><i class="fas fa-user"></i> Education</a></li>
+            <li><a href="#" onclick="showSection('skills')"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#" onclick="showSection('projects')"><i class="fas fa-laptop-code"></i> Projects</a></li>
+            <li><a href="#" onclick="showSection('achievements')"><i class="fas fa-trophy"></i> Achievements</a></li>
+            <li><a href="#" onclick="showSection('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Prabhu Parve</h1>
+        <p>Computer Engineering Student | Web Developer | Tech Enthusiast</p>
+        <img src="https://assets.onecompiler.app/43c4khydj/43cveeavr/portfoli.jpg" alt="Prabhu  Parve" class="profile-img">
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-me" class="section" style="display: none;">
+        <h2><i class="fas fa-user"></i> About Me</h2>
+        <p>Hi, I'm Prabhu! A Computer Engineering student passionate about web development and technology. I love coding, problem-solving, and exploring new trends in tech. I am passionate about coding and love coding. With a solid foundation in computer science and a love for coding, I'm a dedicated and results-driven developer with a drive to continuously learn and improve my skills. My goal is to become a leading expert in software development and make a meaningful impact in the industry. As a passionate coder, I'm looking for opportunities to collaborate with like-minded professionals and drive technological advancements. With a strong background in [programming languages/technologies], I'm excited to contribute to innovative projects and teams, and make a positive impact in the industry.
+
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" style="display: none;">
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <ul>
+            <li>HTML5 (Basic) & CSS3 (Basic)</li> 
+            <li>C Programming (Basic)</li>
+            <li>Python (Basic)</li>
+            <li>Java (Basic)</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" style="display: none;">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <ul>
+            <li>10th Standard: Jaywant International School, Wathar (2022)</li>
+            <li>12th Standard: Kota Junior College of Science, Karad (2024)</li>
+            <li>B-Tech : MIT Academy of Engineering, Alandi, Pune (2028, Expected)</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section" style="display: none;">
+        <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website showcasing my work, built with HTML (Basic), CSS (Basic), and Java (Basic).</p>
+            <p>Created a password generator in linux using basic linux commands and shells.</p>
+            <img src="https://assets.onecompiler.app/43c4khydj/43e8u2dtv/passw.png" alt="Project 1"
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section" style="display: none;">
+        <h2><i class="fas fa-trophy"></i> Achievements</h2>
+        <ul>
+            <li>Completed Linux Course (Simplilearn)</li>
+            <li>Developed personal portfolio website</li>
+        </ul>
+        <div class="certificate-gallery">
+            <h3>Certificates:</h3>
+            <img src="https://assets.onecompiler.app/43c4khydj/43cveeavr/Screenshot%202025-03-25%20231053.png" alt="Certificate 1">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" style="display: none;">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <p>Email: <a href="mailto:prabhuparve@example.com">prabhuparve@247.com</a></p>
+        <p>Mobile No: <a href="contactto:749897XXXX">7498978144</a></p>
+        <p>Linkedin: <a href="connectto:Prabhu Parve"> Prabhu Parve</a></p>
+    </section>
+
+    <!--Resume-->
+    <section id="resume" class="section" style="display: none;">
+        <h2><i class="fas fa-envelop"></i> My Resume</h2>
+        <p>Resume: </p>  
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Prabhu Parve | All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+    // Function to show the selected section and hide others
+    function showSection(sectionId) {
+        // Hide all sections
+        const sections = document.querySelectorAll('.section');
+        sections.forEach(section => section.style.display = 'none');
+
+        // Show the selected section
+        const selectedSection = document.getElementById(sectionId);
+        selectedSection.style.display = 'block';
+    }
+
+    // By default, show the "About Me" section when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        showSection('about-me');
+    });
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
