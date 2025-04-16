@@ -1,2 +1,1 @@
-# Portfolio2
-My own portfolio
+ https://prabhuparve.github.io/Portfolio2/
