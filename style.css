@@ -230,6 +230,21 @@ footer {
         max-width: 300px;
     }
 }
+.download-btn {
+  display: inline-flex;
+  padding: 1px 2px;
+  border: 2px solid #7cf03d;
+  border-radius: 62px;
+  margin: 0 8px;
+  font-size: 20px;
+  color: #7cf03d;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background: #6bd336;
+  color: #1f242d;
+}
 
 /* Mobile Devices (480px and below) */
 @media (max-width: 480px) {
